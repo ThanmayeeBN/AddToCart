@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.e88ac3fe.css",
-    "main.js": "/react-gh-pages/static/js/main.f115b2eb.js",
-    "static/js/787.d0acb16e.chunk.js": "/react-gh-pages/static/js/787.d0acb16e.chunk.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.e88ac3fe.css.map": "/react-gh-pages/static/css/main.e88ac3fe.css.map",
-    "main.f115b2eb.js.map": "/react-gh-pages/static/js/main.f115b2eb.js.map",
-    "787.d0acb16e.chunk.js.map": "/react-gh-pages/static/js/787.d0acb16e.chunk.js.map"
+    "main.css": "/ThanmayeeBN/AddToCart/static/css/main.75184ec8.css",
+    "main.js": "/ThanmayeeBN/AddToCart/static/js/main.39b7bda6.js",
+    "static/js/787.d0acb16e.chunk.js": "/ThanmayeeBN/AddToCart/static/js/787.d0acb16e.chunk.js",
+    "index.html": "/ThanmayeeBN/AddToCart/index.html",
+    "main.75184ec8.css.map": "/ThanmayeeBN/AddToCart/static/css/main.75184ec8.css.map",
+    "main.39b7bda6.js.map": "/ThanmayeeBN/AddToCart/static/js/main.39b7bda6.js.map",
+    "787.d0acb16e.chunk.js.map": "/ThanmayeeBN/AddToCart/static/js/787.d0acb16e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e88ac3fe.css",
-    "static/js/main.f115b2eb.js"
+    "static/css/main.75184ec8.css",
+    "static/js/main.39b7bda6.js"
   ]
 }
