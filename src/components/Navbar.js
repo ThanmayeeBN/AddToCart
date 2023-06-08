@@ -1,17 +1,19 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import useAPI from "../hooks/useAPI";
-import { NavLink, useHistory,Link } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink, useHistory, Link } from "react-router-dom/cjs/react-router-dom.min";
 import { loadUser } from "../store/reducers/user";
 import { useDispatch, useSelector } from 'react-redux';
 import { FaCartArrowDown } from "react-icons/fa";
-
+import { FaBars } from "react-icons/fa";
 
 function Navbar() {
-    const { loading, error, data: categories } = useAPI("https://fakestoreapi.com/products/categories", null);
+    const { loading, error, data: categories } =
+        useAPI("https://fakestoreapi.com/products/categories", null);
 
     const dispatch = useDispatch();
     const history = useHistory();
     const cart = useSelector(state => state.cart);
+    const [show, setshow] = useState(true);
 
     const cartItem = useMemo(() => {
         let totalItems = 0;
@@ -44,29 +46,40 @@ function Navbar() {
                 No categories found!
             </div>
         )
-    } else {
+    }
+
+    else {
         return (
-            <div className="navbar">
-                <div className="products">
-                    {categories.map(category => (
-                        <NavLink
-                            key={`category-${category}`}
-                            // className="product-category">{category}
-                            className="product-category"
-                            activeClassName="product-category--selected"
-                            to={`/products/${category}`}
-                        >
-                            {category}
-                        </NavLink>
-                    ))}
-                </div>
-                <Link to="/cart" className="cart-icon-container">
-                    <FaCartArrowDown className="cart-icon" />
-                    <div className="cart-itemss">{cartItem}</div>
-                </Link>
+            <div>
+                <FaBars onClick={() => setshow(!show)}>Toggle</FaBars>
+                {
+                    show ? <div>
+                        <div className="navbar">
+                            <div className="products">
+                                {categories.map((category) => (
+                                    <NavLink
+                                        key={`category-${category}`}
+                                        className="product-category"
+                                        activeClassName="product-category--selected"
+                                        to={`/products/${category}`}
+
+                                    >
+                                        {category}
+                                    </NavLink>
+                                ))}
+                            </div>
+                            <Link to="/cart" className="cart-icon-container">
+                                <FaCartArrowDown className="cart-icon" />
+                                <div className="cart-itemss">{cartItem}</div>
+                            </Link>
+                        </div>
+                    </div> : null
+                }
             </div>
         );
+
     }
+
 }
 
 export default Navbar;
