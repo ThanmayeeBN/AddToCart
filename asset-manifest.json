@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ThanmayeeBN/AddToCart/static/css/main.75184ec8.css",
-    "main.js": "/ThanmayeeBN/AddToCart/static/js/main.39b7bda6.js",
-    "static/js/787.d0acb16e.chunk.js": "/ThanmayeeBN/AddToCart/static/js/787.d0acb16e.chunk.js",
-    "index.html": "/ThanmayeeBN/AddToCart/index.html",
-    "main.75184ec8.css.map": "/ThanmayeeBN/AddToCart/static/css/main.75184ec8.css.map",
-    "main.39b7bda6.js.map": "/ThanmayeeBN/AddToCart/static/js/main.39b7bda6.js.map",
-    "787.d0acb16e.chunk.js.map": "/ThanmayeeBN/AddToCart/static/js/787.d0acb16e.chunk.js.map"
+    "main.css": "/AddToCart/static/css/main.fd62e3d4.css",
+    "main.js": "/AddToCart/static/js/main.3255d99f.js",
+    "static/js/787.d0acb16e.chunk.js": "/AddToCart/static/js/787.d0acb16e.chunk.js",
+    "index.html": "/AddToCart/index.html",
+    "main.fd62e3d4.css.map": "/AddToCart/static/css/main.fd62e3d4.css.map",
+    "main.3255d99f.js.map": "/AddToCart/static/js/main.3255d99f.js.map",
+    "787.d0acb16e.chunk.js.map": "/AddToCart/static/js/787.d0acb16e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75184ec8.css",
-    "static/js/main.39b7bda6.js"
+    "static/css/main.fd62e3d4.css",
+    "static/js/main.3255d99f.js"
   ]
 }
