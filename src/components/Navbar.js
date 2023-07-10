@@ -4,7 +4,7 @@ import { NavLink, useHistory, Link } from "react-router-dom/cjs/react-router-dom
 import { loadUser } from "../store/reducers/user";
 import { useDispatch, useSelector } from 'react-redux';
 import { FaCartArrowDown } from "react-icons/fa";
-import { FaBars } from "react-icons/fa";
+// import { FaBars } from "react-icons/fa";
 
 function Navbar() {
     const { loading, error, data: categories } =
@@ -13,7 +13,7 @@ function Navbar() {
     const dispatch = useDispatch();
     const history = useHistory();
     const cart = useSelector(state => state.cart);
-    const [show, setshow] = useState(true);
+    // const [show, setshow] = useState(true);
 
     const cartItem = useMemo(() => {
         let totalItems = 0;
@@ -50,10 +50,10 @@ function Navbar() {
 
     else {
         return (
-            <div>
-                <FaBars onClick={() => setshow(!show)}>Toggle</FaBars>
-                {
-                    show ? <div>
+            // <div>
+            //     <FaBars onClick={() => setshow(!show)}>Toggle</FaBars>
+            //     {
+            //         show ? <div>
                         <div className="navbar">
                             <div className="products">
                                 {categories.map((category) => (
@@ -73,9 +73,10 @@ function Navbar() {
                                 <div className="cart-itemss">{cartItem}</div>
                             </Link>
                         </div>
-                    </div> : null
-                }
-            </div>
+            //         {/* </div> : null
+            //     }
+
+            // </div> */}
         );
 
     }
